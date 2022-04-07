@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="400.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetotcc.admin.material.AdminBuscarMaterialController">
+   <children>
+      <TableView fx:id="Tabela_Principal" layoutX="14.0" layoutY="13.0" prefHeight="372.0" prefWidth="434.0">
+         <columns>
+            <TableColumn fx:id="Tabela_Nome" prefWidth="126.0" text="Nome" />
+            <TableColumn fx:id="Tabela_Descricao" minWidth="0.0" prefWidth="233.0" text="Descrição" />
+            <TableColumn fx:id="Tabela_Disponivel" minWidth="0.0" prefWidth="74.0" text="Disponível?" />
+         </columns>
+      </TableView>
+      <TextField fx:id="tf_procurar" layoutX="458.0" layoutY="14.0" prefHeight="25.0" prefWidth="160.0" promptText="Procurar" />
+      <Button layoutX="611.0" layoutY="152.0" mnemonicParsing="false" onAction="#Editar" prefHeight="25.0" prefWidth="128.0" text="Alterar Informações" />
+      <CheckBox fx:id="cb_Disponivel" layoutX="626.0" layoutY="18.0" mnemonicParsing="false" selected="true" text="Disponível?" />
+      <Button layoutX="611.0" layoutY="360.0" mnemonicParsing="false" onAction="#FazerMaterial" prefHeight="25.0" prefWidth="128.0" text="Fazer Material" />
+      <Button fx:id="btn_excluir" layoutX="611.0" layoutY="200.0" mnemonicParsing="false" onAction="#Deletar" prefHeight="25.0" prefWidth="128.0" style="-fx-background-color: ff2626;" text="Deletar Material" textFill="WHITE" />
+      <Button fx:id="btn_selecionar" layoutX="458.0" layoutY="360.0" mnemonicParsing="false" onAction="#Selecionar" text="Escolher Material" visible="false" />
+   </children>
+</AnchorPane>
