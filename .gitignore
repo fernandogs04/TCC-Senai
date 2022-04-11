@@ -1,3 +1,8 @@
 # Build do java
 Codigo/Desktop/ProjetoTCC/build/
 Codigo/Desktop/ProjetoTCC/dist/
+Codigo/Desktop/ProjetoTCC/nbbuild/
+Codigo/Desktop/ProjetoTCC/nbdist/
+Codigo/Desktop/ProjetoTCC/nbproject/private/
+Codigo/Desktop/ProjetoTCC/nbproject/Makefile-*.mk
+Codigo/Desktop/ProjetoTCC/nbproject/Package-*.bash
